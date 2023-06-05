@@ -8,14 +8,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
+    <section class="container px-4 mx-auto py-4">
+
         @yield('header')
-    </header>
-    <div class="content">
-        @yield('content')
-    </div>
-    <footer>
-        @yield('footer')
-    </footer>
+
+        <div>
+            <x-messages/>
+            @yield('content')
+        </div>
+
+    </section>
 </body>
 </html>
